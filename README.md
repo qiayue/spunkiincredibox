@@ -1,6 +1,6 @@
-# Spunki Incredibox Website
+# [Spunki Incredibox](https://spunkiincredibox.com/) Website
 
-Welcome to the official repository for SpunkiIncredibox.com, the landing page for the Spunki mod of the popular Incredibox music creation game.
+Welcome to the official repository for [SpunkiIncredibox.com](https://spunkiincredibox.com/), the landing page for the Spunki mod of the popular Incredibox music creation game.
 
 ## About Spunki Incredibox
 

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spunki Incredibox - Create Your Own Beats! | SpunkiIncredibox.com</title>
+    <meta name="description" content="Play Spunki Incredibox, a fun and interactive music game. Create your own beats with our crew of colorful beatboxers. Try it now!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('./img/home-header1-big.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: #fff;
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #ff4500;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #ff6347;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #ff4500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .cta-button:hover {
+            background-color: #ff6347;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .twitter-feed {
+            column-count: 3;
+            column-gap: 1rem;
+        }
+        .twitter-feed > div {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .twitter-feed {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 480px) {
+            .twitter-feed {
+                column-count: 1;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .section{
+            background-color: #f9f9f9;
+            border-left: 5px solid #ff4500;
+            padding-left: 2rem;
+        }
+        .section ul{
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        .section li{
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .section li:before{
+            content: "•";
+            color: #ff4500;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        #how-to-play ol {
+            padding-left: 2rem;
+        }
+        #how-to-play li {
+            margin-bottom: 1rem;
+        }
+        #spunki-vs-incredibox table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        #spunki-vs-incredibox th, #spunki-vs-incredibox td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        #spunki-vs-incredibox th {
+            background-color: #f2f2f2;
+        }
+        #tips-and-tricks ul, #community-spotlight ul {
+            padding-left: 1.5rem;
+        }
+        #faq dt {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        #faq dd {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Spunki Incredibox</h1>
+        <h2 class="tagline">Create Your Own Beats with Our Colorful Crew!</h2>
+        <a href="#play" class="cta-button">Play Spunki Incredibox Now</a>
+    </header>
+    
+    <main>
+
+        <section class="section" id="introduction">
+            <h2>Welcome to Spunki Incredibox</h2>
+            <p>Spunki Incredibox is an innovative online music creation tool that puts the power of rap music composition at your fingertips. As a special version of the popular Incredibox platform, Sprunki is dedicated to creating unique and exciting rap music compositions.</p>
+            <p>Whether you're a beginner just starting to explore music creation or a seasoned professional looking for a fun new tool, Spunki Incredibox offers an intuitive, engaging experience that's sure to inspire your creativity.</p>
+        </section>
+
+        <section class="section">
+            <h2>About Spunki Incredibox</h2>
+            <p>Spunki Incredibox is an exciting mod of the popular Incredibox music game. Originally created by NyankoBfLol on Scratch, it has now found a new home on Cocrea and itch.io. This unique version adds a twist to the classic Incredibox gameplay, offering a fresh and engaging experience for music lovers and creative minds alike.</p>
+        </section>
+        
+        <section class="section" id="play">
+            <h2>Play Spunki Incredibox</h2>
+            <div class="game-container">
+                <iframe src="https://html-classic.itch.zone/html/11407110/index.html" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="section" id="key-features">
+            <h2>Key Features of Spunki Incredibox</h2>
+            <ul>
+                <li>Pre-set audio samples in various rap styles (Hip Hop, Trap, Dubstep, and more)</li>
+                <li>Multiple Sprunki characters for different vocal parts (lead vocals, harmonies, beatboxing)</li>
+                <li>Drag-and-drop interface for easy music composition</li>
+                <li>Various sound effects and filters (echo, distortion, delay) to enhance your creations</li>
+                <li>Instant recording and saving capabilities for easy editing and sharing</li>
+                <li>Online platform - no downloads or installations required</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Community Buzz of Spunki Incredibox</h2>
+            <div class="twitter-feed">
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">gray plays piano (ft.wenda) <a href="https://twitter.com/hashtag/incredibox?src=hash&amp;ref_src=twsrc%5Etfw">#incredibox</a> <a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> <a href="https://t.co/TSDfcZ6lY5">pic.twitter.com/TSDfcZ6lY5</a></p>&mdash; jade the playergeek (@playergeek30) <a href="https://twitter.com/playergeek30/status/1836522397911883978?ref_src=twsrc%5Etfw">September 18, 2024</a></blockquote> 
+                </div>
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">reposting my sprunki animation here because it&#39;s doing really well on tik tok <a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> <a href="https://t.co/16Usz6AsCa">pic.twitter.com/16Usz6AsCa</a></p>&mdash; swoof (@sofrwarez) <a href="https://twitter.com/sofrwarez/status/1837547000352399810?ref_src=twsrc%5Etfw">September 21, 2024</a></blockquote> 
+                </div>
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">2nd time tweening ^^ had a lot of fun with this !! <a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> 💛🧡 <a href="https://t.co/uCE1Df7XRk">pic.twitter.com/uCE1Df7XRk</a></p>&mdash; Marshall ✧︎*•.🪽 (@Boy_Princesss) <a href="https://twitter.com/Boy_Princesss/status/1837221672283164987?ref_src=twsrc%5Etfw">September 20, 2024</a></blockquote> 
+                </div>
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">yay, finally finished this<a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> <a href="https://t.co/WcNNDIgAUO">pic.twitter.com/WcNNDIgAUO</a></p>&mdash; hel (@hall_h9rny) <a href="https://twitter.com/hall_h9rny/status/1837443591544672682?ref_src=twsrc%5Etfw">September 21, 2024</a></blockquote> 
+                </div>
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">87 <a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> <a href="https://twitter.com/hashtag/incredibox?src=hash&amp;ref_src=twsrc%5Etfw">#incredibox</a><br><br>tw//blood <a href="https://t.co/q3YU8gLFFk">pic.twitter.com/q3YU8gLFFk</a></p>&mdash; jade the playergeek (@playergeek30) <a href="https://twitter.com/playergeek30/status/1835825478470336983?ref_src=twsrc%5Etfw">September 16, 2024</a></blockquote> 
+                </div>
+                <div class="feed">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">gray plays piano (ft.wenda) <a href="https://twitter.com/hashtag/incredibox?src=hash&amp;ref_src=twsrc%5Etfw">#incredibox</a> <a href="https://twitter.com/hashtag/sprunki?src=hash&amp;ref_src=twsrc%5Etfw">#sprunki</a> <a href="https://t.co/TSDfcZ6lY5">pic.twitter.com/TSDfcZ6lY5</a></p>&mdash; jade the playergeek (@playergeek30) <a href="https://twitter.com/playergeek30/status/1836522397911883978?ref_src=twsrc%5Etfw">September 18, 2024</a></blockquote> 
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about-spunki">
+            <h2>About Spunki</h2>
+            <p>Spunki is an innovative mod for the popular Incredibox game, created by the talented NyankoBfLol. Originally developed on the Scratch platform, Spunki brings a fresh and exciting twist to the Incredibox formula.</p>
+            <p>Key features of Spunki include:</p>
+            <ul>
+                <li>Unique characters and sounds not found in the original Incredibox</li>
+                <li>A darker, edgier aesthetic that appeals to a more mature audience</li>
+                <li>Custom animations and interactions that add depth to the gameplay</li>
+                <li>A passionate community of fans who create and share their own Spunki mixes</li>
+            </ul>
+        </section>
+
+        <section class="section" id="about-incredibox">
+            <h2>What is Incredibox?</h2>
+            <p>Incredibox is the original music creation game that inspired Spunki. Developed by the French company So Far So Good, Incredibox has captivated millions of players worldwide with its intuitive design and addictive gameplay.</p>
+            <p>Incredibox offers:</p>
+            <ul>
+                <li>A fun, interactive music experience suitable for all ages</li>
+                <li>Multiple musical atmospheres, each with its own unique style and sounds</li>
+                <li>The ability to create, record, and share your own musical mixes</li>
+                <li>A blend of game elements and music creation tools that make learning fun</li>
+            </ul>
+            <p>While Spunki builds upon the Incredibox concept, it offers a distinct experience that sets it apart from the original game.</p>
+        </section>
+
+        <section class="section" id="new-features">
+            <h2>Exciting New Features in Incredibox Sprunki</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>New Characters and Sounds</h3>
+                    <p>Discover a variety of new characters and sounds that add a quirky, unique flavor to your mixes. Create more diverse and creative combinations than ever before!</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Enhanced Gameplay</h3>
+                    <p>Enjoy improved gameplay mechanics with a more intuitive interface. Experiment with different sound combinations more easily and create your masterpieces with smoother interactions.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Gore Mode</h3>
+                    <p>For those who like to walk on the wild side, try out our unique "Gore Mode". Experience altered character appearances and abilities that add an exciting, darker theme to your music compositions.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Community Favorites</h3>
+                    <p>Join the community in exploring popular new additions like the "White" character, praised for its ability to complement other instruments across various modes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="creation-process">
+            <h2>How to Create with Spunki Incredibox</h2>
+            <ul>
+                <li>Select a pre-set rap style as your base</li>
+                <li>Drag and drop different Sprunki onto the screen - each Sprunki sings a different part</li>
+                <li>Adjust the volume and apply sound effects to each Sprunki</li>
+                <li>Keep experimenting until you're happy with your creation</li>
+                <li>Record your masterpiece and save it for future editing or sharing</li>
+            </ul>
+            <p>It's that simple! With Spunki Incredibox, you can create professional-sounding rap compositions in minutes.</p>
+        </section>
+
+        <section class="section" id="advantages">
+            <h2>Why Choose Spunki Incredibox?</h2>
+            <ul>
+                <li>User-friendly interface suitable for all skill levels</li>
+                <li>Wide range of pre-set samples and characters to spark your creativity</li>
+                <li>Instant recording and saving for on-the-go music making</li>
+                <li>Diverse sound effects and filters for unique compositions</li>
+                <li>No software to download - create music right in your browser</li>
+                <li>Fun, engaging way to explore music creation and rap composition</li>
+            </ul>
+        </section>
+
+
+        <section class="section" id="how-to-play">
+            <h2>How to Play Spunki Incredibox</h2>
+            <ul>
+                <li>Choose your beatboxers: Click and drag icons onto the characters to assign them sounds.</li>
+                <li>Mix and match: Experiment with different combinations to create unique beats.</li>
+                <li>Discover bonuses: Find special combinations to unlock animated choruses.</li>
+                <li>Record your mix: Once you're happy with your creation, hit the record button to save it.</li>
+                <li>Share and compete: Share your mix with friends and the Spunki Incredibox community. Get enough votes to make it to the Top 50 chart!</li>
+            </ul>
+            <p>Remember, there's no wrong way to play - let your creativity flow and have fun!</p>
+        </section>
+
+        <section class="section" id="spunki-vs-incredibox">
+            <h2>Spunki vs Original Incredibox: What's Different?</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Spunki</th>
+                    <th>Original Incredibox</th>
+                </tr>
+                <tr>
+                    <td>Theme</td>
+                    <td>Darker, edgier aesthetic</td>
+                    <td>Varies by version, generally more lighthearted</td>
+                </tr>
+                <tr>
+                    <td>Characters</td>
+                    <td>Unique Spunki characters</td>
+                    <td>Classic Incredibox beatboxers</td>
+                </tr>
+                <tr>
+                    <td>Sounds</td>
+                    <td>Custom sound library</td>
+                    <td>Version-specific sound libraries</td>
+                </tr>
+                <tr>
+                    <td>Animations</td>
+                    <td>Spunki-specific animations</td>
+                    <td>Version-specific animations</td>
+                </tr>
+                <tr>
+                    <td>Platforms</td>
+                    <td>Web (via itch.io)</td>
+                    <td>Web, iOS, Android, Windows</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section" id="tips-and-tricks">
+            <h2>Tips and Tricks for Spunki Incredibox Masters</h2>
+            <ul>
+                <li>Start with a strong beat: Begin your mix with a solid rhythm to build upon.</li>
+                <li>Layer sounds gradually: Don't add all your sounds at once. Build your mix layer by layer for a richer composition.</li>
+                <li>Experiment with silence: Sometimes, removing a sound can be as impactful as adding one.</li>
+                <li>Hunt for bonuses: Try different combinations to unlock special animations and sounds.</li>
+                <li>Use contrasts: Mix high and low pitches, fast and slow rhythms for a more dynamic sound.</li>
+                <li>Practice active listening: Pay attention to how different sounds interact with each other.</li>
+                <li>Don't be afraid to restart: If your mix isn't working, don't hesitate to clear the board and start fresh.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="community-spotlight">
+            <h2>Community Spotlight: Top Spunki Mixes</h2>
+            <p>Check out these amazing mixes created by our community:</p>
+            <!-- You would need to replace these with actual community mixes -->
+            <ul>
+                <li>"Spunki Nights" by DJ_Beatmaster</li>
+                <li>"Dark Rhythms" by SpunkiLover99</li>
+                <li>"Echoes of Silence" by MixMaster2000</li>
+            </ul>
+            <p>Want to see your mix featured here? Share your creation and gather votes from the community!</p>
+        </section>
+
+        <section class="section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>Is Spunki Incredibox free to play?</dt>
+                <dd>Yes, you can play Spunki Incredibox for free on our website.</dd>
+                
+                <dt>Can I download my Spunki mix?</dt>
+                <dd>Currently, mixes can be saved and shared via link, but direct downloads are not available.</dd>
+                
+                <dt>How often is new content added to Spunki?</dt>
+                <dd>The Spunki team works hard to bring new content regularly. Check our news section for updates!</dd>
+                
+                <dt>Can I suggest new sounds or features for Spunki?</dt>
+                <dd>Absolutely! We love hearing from our community. Use the contact form to send us your ideas.</dd>
+                
+                <dt>Is Spunki suitable for children?</dt>
+                <dd>While Spunki is enjoyable for all ages, it has a slightly darker theme compared to the original Incredibox. Parental guidance is advised for younger children.</dd>
+            </dl>
+        </section>
+
+
+        <section class="section" id="get-started">
+            <h2>Ready to Create Your First Track?</h2>
+            <p>Jump right in and start creating with Spunki Incredibox. No sign-up required - just open the app and let your creativity flow!</p>
+            <a href="#play" class="cta-button">Start Creating Now</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SpunkiIncredibox.com. All rights reserved.</p>
+        <p>Open Source <a href="https://github.com/qiayue/spunkiincredibox" style="color:white;" target="_blank">SpunkiIncredibox</a></p>
+    </footer>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
